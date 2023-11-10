@@ -210,7 +210,7 @@
                     <visual name='visual'>
                         <geometry>
                             <!-- geometry X Y Z in meters -->
-                            <mesh><uri>/home/abbas/ROS1/Gazebo/Kick_Gazebo/Models/Robots/Torta.dae</uri></mesh>
+                            <mesh><uri>/home/abbas/ROS1/Gazebo/Kick_Gazebo/Models/Robots/fixed_torta.dae</uri></mesh>
                         </geometry>
                     
 
@@ -326,7 +326,7 @@
                 <pose relative_to='caster_front_frame'/>
 
                 <inertial>
-                    <mass>0.1</mass>
+                    <mass>0.5</mass>
                     <inertia>
                         <ixx>0.016</ixx>
                         <ixy>0</ixy>
@@ -340,7 +340,7 @@
                 <visual name='visual'>
                     <geometry>
                         <sphere>
-                            <radius>0.02</radius>
+                            <radius>0.03</radius>
                         </sphere>
                     </geometry>
                     <material>
@@ -364,7 +364,7 @@
                 <pose relative_to='caster_back_frame'/>
 
                 <inertial>
-                    <mass>0.1</mass>
+                    <mass>0.5</mass>
                     <inertia>
                         <ixx>0.016</ixx>
                         <ixy>0</ixy>
@@ -378,7 +378,7 @@
                 <visual name='visual'>
                     <geometry>
                         <sphere>
-                            <radius>0.02</radius>
+                            <radius>0.03</radius>
                         </sphere>
                     </geometry>
                     <material>
