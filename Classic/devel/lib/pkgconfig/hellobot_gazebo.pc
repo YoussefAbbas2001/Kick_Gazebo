@@ -1,0 +1,8 @@
+prefix=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/devel
+
+Name: hellobot_gazebo
+Description: Description of hellobot_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

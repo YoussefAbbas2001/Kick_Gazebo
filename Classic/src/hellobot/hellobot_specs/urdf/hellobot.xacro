@@ -1,29 +1,12 @@
 <?xml version='1.0'?>
 
 <robot name="hellobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find hellobot_specs)/urdf/materials.xacro"/>
+    <xacro:include filename="$(find hellobot_specs)/urdf/hellobot.gazebo.xacro"/>
 
 
-
-    <material name="blue">
-        <color rgba="0.1 0.1 0.9 1"/>
-      </material>
-    
-      <material name="white">
-        <color rgba="1 1 1 1"/>
-      </material>
-    
-      <material name="green">
-        <color rgba="0 1 0 1"/>
-      </material>
-    
-      <material name="black">
-        <color rgba="0 0 0 1"/>
-      </material>
-
-      <material name="yellow">
-        <color rgba="1 0 1 1"/>
-      </material>
-  
+    <xacro:property name="cameraSize" value="0.05"/>
+    <xacro:property name="cameraMass" value="0.1"/>
 
       <link name="base_footprint" />
 
@@ -55,6 +38,8 @@
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <box size=".4 .2 .1"/>
+        <!-- <mesh filename="file://$(find hellobot_specs)/meshes/fixed_torta.dae" /> -->
+
       </geometry>
       <material name="black"/>
     </visual>
@@ -81,6 +66,7 @@
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
+      <material name="green">   </material>
     </visual>
 
     <collision name='caster_front_collision'>
@@ -105,6 +91,8 @@
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
+      <material name="green">   </material>
+
     </visual>
 
   </link>
@@ -182,7 +170,37 @@
   </joint>
 
 
+  <!-- Camera -->
+  <link name="camera_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+      </geometry>
+    </collision>
 
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+
+    <inertial>
+      <mass value="${cameraMass}" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz=".2 0 0" rpy="0 0 0"/>
+    <parent link="chassis"/>
+    <child link="camera_link"/>
+  </joint>
 
 
 

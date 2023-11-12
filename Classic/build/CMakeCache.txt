@@ -409,8 +409,17 @@ class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/noetic/share/dynamic_reconfigure/cmake
+
 //The directory containing a CMake configuration file for gazebo.
 gazebo_DIR:PATH=gazebo_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for gazebo_msgs.
+gazebo_msgs_DIR:PATH=/opt/ros/noetic/share/gazebo_msgs/cmake
+
+//The directory containing a CMake configuration file for gazebo_ros.
+gazebo_ros_DIR:PATH=/opt/ros/noetic/share/gazebo_ros/cmake
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
@@ -484,6 +493,12 @@ hellobot_desc_BINARY_DIR:STATIC=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/buil
 
 //Value Computed by CMake
 hellobot_desc_SOURCE_DIR:STATIC=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/src/hellobot/hellobot_desc
+
+//Value Computed by CMake
+hellobot_gazebo_BINARY_DIR:STATIC=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/build/hellobot/hellobot_gazebo
+
+//Value Computed by CMake
+hellobot_gazebo_SOURCE_DIR:STATIC=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/src/hellobot/hellobot_gazebo
 
 //Value Computed by CMake
 hellobot_specs_BINARY_DIR:STATIC=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/build/hellobot/hellobot_specs
@@ -583,6 +598,9 @@ tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/noetic/share/tf/cmake
+
+//The directory containing a CMake configuration file for trajectory_msgs.
+trajectory_msgs_DIR:PATH=/opt/ros/noetic/share/trajectory_msgs/cmake
 
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake

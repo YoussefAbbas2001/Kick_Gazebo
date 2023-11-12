@@ -1,2 +1,2 @@
-hellobot/hellobot_desc:hellobot/hellobot_specs
+hellobot/hellobot_gazebo:hellobot/hellobot_specs
 -DCATKIN_DEVEL_PREFIX=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/devel -DCMAKE_INSTALL_PREFIX=/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/install -G Unix Makefiles

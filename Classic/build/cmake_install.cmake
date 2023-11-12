@@ -131,7 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/build/gtest/cmake_install.cmake")
-  include("/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/build/hellobot/hellobot_desc/cmake_install.cmake")
+  include("/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/build/hellobot/hellobot_gazebo/cmake_install.cmake")
   include("/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/build/hellobot/hellobot_specs/cmake_install.cmake")
 
 endif()
