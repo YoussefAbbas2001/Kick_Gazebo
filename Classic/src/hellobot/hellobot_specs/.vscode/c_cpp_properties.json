@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/abbas/DEBI/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/abbas/DEBI/src/DynamixelSDK/ros/dynamixel_sdk/include/**",
+        "/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/src/hellobot/hellobot_desc/include/**",
+        "/home/abbas/ROS1/Gazebo/Kick_Gazebo/Classic/src/hellobot/hellobot_specs/include/**",
+        "/home/abbas/DEBI/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/abbas/DEBI/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/abbas/DEBI/src/turtlebot3/turtlebot3_slam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
